@@ -1,160 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Bootstrap Page</title>
-  <link rel="stylesheet" href="css/Main.css">
-  <script src="js/Main.js"></script>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontawesome CDN-->
+    <script src="https://kit.fontawesome.com/5eb820a637.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark gradient-custom">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-collapse-init
-            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-      <i class="fas fa-bars text-light"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
-        <li class="nav-item text-center mx-2 mx-lg-1">
-          <a class="nav-link active" aria-current="page" href="#!">
-            <div>
-              <i class="fas fa-home fa-lg mb-1"></i>
+<!-- Navigation Bar -->
+<div class="container-fluid fixed-top px-0">
+    <div class="container px-0">
+        <nav class="navbar navbar-light bg-light navbar-expand-xl bg-info-subtle">
+            <a href="index.html" class="navbar-brand ms-3">
+                <h1 class="text-primary display-5">Software Developer</h1>
+            </a>
+            <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-info-subtle" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="about.html" class="nav-item nav-link">About</a>
+<!--                    <a href="causes.html" class="nav-item nav-link">Additional </a>-->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">My Educational</a>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a href="https://csuglobal.edu/academic-programs/undergraduate-degrees/bachelors-degree-computer-science" class="dropdown-item">CSU Global</a>
+                            <a href="https://www.lonestar.edu/programs-of-study/Mobile-WebApplicationDevelopmentAAS.htm?utm_medium=viewthrough" class="dropdown-item">Lone Star College</a>
+                            <a href="volunteer.html" class="dropdown-item">CodeUp Coding BootCamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
+                    <a href="" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">My Projects</a>
+                    <a href="" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Download Resume</a>
+                </div>
             </div>
-            Home
-          </a>
-        </li>
-        <li class="nav-item text-center mx-2 mx-lg-1">
-          <a class="nav-link" href="#!">
-            <div>
-              <i class="far fa-envelope fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-dark">11</span>
-            </div>
-            Link
-          </a>
-        </li>
-        <li class="nav-item text-center mx-2 mx-lg-1">
-          <a class="nav-link disabled" aria-disabled="true" href="#!">
-            <div>
-              <i class="far fa-envelope fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-dark">11</span>
-            </div>
-            Disabled
-          </a>
-        </li>
-        <li class="nav-item dropdown text-center mx-2 mx-lg-1">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-dropdown-init
-             aria-expanded="false">
-            <div>
-              <i class="far fa-envelope fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-dark">11</span>
-            </div>
-            Dropdown
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Left links -->
-
-      <!-- Right links -->
-      <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">
-        <li class="nav-item text-center mx-2 mx-lg-1">
-          <a class="nav-link" href="#!">
-            <div>
-              <i class="fas fa-bell fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-dark">11</span>
-            </div>
-            Messages
-          </a>
-        </li>
-        <li class="nav-item text-center mx-2 mx-lg-1">
-          <a class="nav-link" href="#!">
-            <div>
-              <i class="fas fa-globe-americas fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-dark">11</span>
-            </div>
-            News
-          </a>
-        </li>
-      </ul>
-      <!-- Right links -->
-
-      <!-- Search form -->
-      <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
-        <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
-        <button type="button" class="btn btn-outline-light" data-mdb-ripple-init data-mdb-ripple-color="dark">
-          Search
-        </button>
-      </form>
+        </nav>
     </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-
-
-
-
-
-
-
+</div>
+<!-- Navigation Bar End -->
 
 <!-- Hero Section -->
-<section class="bg-primary text-white text-center p-5">
-  <div class="container">
-    <h1>Welcome to My Bootstrap Page</h1>
-    <p class="lead">This is a simple responsive layout using Bootstrap 5.</p>
-  </div>
-</section>
+<header class="bg-light text-dark py-5">
+    <div class="container hero-header">
+        <div class="row align-items-center">
+            <!-- Profile Image -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="asset/profile.jpg" alt="Profile Photo" class="img-fluid rounded-circle shadow" width="200">
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold">Hi, I'm Minh Nguyen</h1>
+                <p class="lead"><i class="fa-solid fa-location-dot"></i> Houston, Texas</p>
+                <p>I enjoy building user-focused applications with modern technologies like Spring Boot, React, and Bootstrap. Let's bring your ideas to life!</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-info me-4"><i class="fa-solid fa-envelope fa-lg"></i> quangminh.nguyen8989@gmail.com</a>
+                        <a href="#" class="text-info"><i class="fa-solid fa-phone fa-lg"></i> (346)567-8989</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn-square me-2"><i class="fa-brands fa-square-github fa-lg"></i></a>
+                        <a href="#" class="btn-square me-0"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Hero Section End -->
 
 <!-- Content Section -->
 <section class="container my-5">
-  <div class="row">
-    <div class="col-md-4">
-      <h3>Card 1</h3>
-      <p>Bootstrap makes front-end web development faster and easier.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Programming Languages</h2>
+            <p>This is a sample paragraph about you or your project.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Tools & Framework</h2>
+            <p>You can add images, links, or cards here using Bootstrap components.</p>
+        </div>
     </div>
-    <div class="col-md-4">
-      <h3>Card 2</h3>
-      <p>It uses HTML, CSS, and JS components for building responsive sites.</p>
+    <div class="container my-5">
+        <form class="d-flex justify-content-center" role="search">
+            <input class="form-control me-2 w-50" type="search" placeholder="Search for programming languages, Tools, Framework,..." aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
     </div>
-    <div class="col-md-4">
-      <h3>Card 3</h3>
-      <p>Bootstrap's grid system allows for mobile-first layouts.</p>
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/150x220" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 1</h5>
+                        <p class="card-text">Quick summary or tagline.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/150x220" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 2</h5>
+                        <p class="card-text">Another great book description here.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/150x220" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Title 3</h5>
+                        <p class="card-text">Something short and informative.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2025 MySite. All rights reserved.</p>
-</footer>
+<footer class="bg-info-subtle text-dark py-4 mt-5">
+    <div class="container text-center">
+        <h5 class="mb-3">Minh Nguyen</h5>
+        <p class="mb-2">Full-Stack Developer | Java | Spring Boot | Bootstrap | MySQL</p>
 
-<!-- Bootstrap JS Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Social Links -->
+        <div class="mb-3">
+            <a href="https://github.com/yourusername" target="_blank" class="text-dark-emphasis me-3">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-dark-emphasis me-3">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:your.email@example.com" class="text-dark-emphasis">
+                <i class="bi bi-envelope"></i> Email
+            </a>
+        </div>
+
+        <p class="small mb-0">This website is hosted and deployed via S3 Bucket - Amazon Web Service (AWS)</p>
+    </div>
+</footer>
+<!-- Footer End-->
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- My JS files -->
+<script src="js/main.js"></script>
 </body>
 </html>
